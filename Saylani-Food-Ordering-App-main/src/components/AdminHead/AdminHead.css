@@ -1,0 +1,28 @@
+.adminHomeHead .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-bottom: 5px; 
+    /* border-bottom: 1px solid #000; */
+  }
+  .adminHomeHead .head .head_right i {
+    font-size: 40px;
+  }
+  .adminHomeHead .head .head_left  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .adminHomeHead .head .head_left .icon i  {
+    font-size: 20px;
+  }
+  .adminHomeHead .head .head_left .text h5 {
+    color: #024f9d;
+    font-size: 18px;
+  }
+  
+  .adminHomeHead .head .head_left .text h4 {
+    color: #61b846;
+    font-size: 15px;
+  }

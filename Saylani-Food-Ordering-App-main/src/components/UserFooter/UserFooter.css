@@ -1,0 +1,30 @@
+.AdminFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+  .AdminFooter ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 40px;
+    height: 100%;
+    padding: 0 10px;
+  }
+  
+  .AdminFooter ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .AdminFooter ul li i {
+    color: #61b846;
+  }
+  

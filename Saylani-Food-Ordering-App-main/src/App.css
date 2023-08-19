@@ -1,0 +1,662 @@
+main {
+  width: 400px;
+  height: 80vh;
+  padding: 30px 0;
+  border-radius: 35px;
+  background: #fff;
+  box-shadow: 0px 2px 12px 3px #61b846;
+  backdrop-filter: blur(25px);
+  overflow: hidden;
+}
+
+.over {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.border {
+  border-bottom: 1px solid #61b846;
+}
+
+.over::-webkit-scrollbar {
+  display: none;
+}
+
+/* Main Style End */
+
+.homePage > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.homePage .logo {
+  width: 250px;
+  height: 200px;
+}
+
+/* Home Style End */
+
+.authPage > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.authPage form {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.authPage form div {
+  position: relative;
+}
+
+.authPage form div i {
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.authPage form input {
+  border: none;
+  border-bottom: 1px solid #d4d3d3;
+  width: 100%;
+  padding: 10px;
+}
+.authPage form input:focus {
+  outline: none;
+}
+.authPage .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.authPage .text a {
+  color: #024f9d;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* auth Style End */
+
+.userHomePage .container {
+  padding: 0 20px;
+}
+.userHomePage .container .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.userHomePage .container .head h4 {
+  color: #61b846;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.userHomePage .container .head h6 {
+  color: #024f9d;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.userHomePage .container .body {
+  margin-top: 10px;
+}
+.userHomePage .container .body img.bann {
+  width: 100%;
+  height: 137px;
+  object-fit: fill;
+}
+.userHomePage .container .body .searchList {
+  position: relative;
+  margin-top: 10px;
+}
+.userHomePage .container .body .searchList input {
+  width: 100%;
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 10px 10px 10px 30px;
+  color: gray;
+  outline: none;
+}
+.userHomePage .container .body .searchList i {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  color: gray;
+}
+.userHomePage .container .body .categoriesList {
+  margin-top: 10px;
+}
+.userHomePage .container .body .categoriesList ul {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.userHomePage .container .body .categoriesList ul li {
+  text-align: center;
+}
+.userHomePage .container .body .categoriesList ul li a img {
+  width: 100% !important;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #61b846;
+  border-radius: 10px;
+}
+.userHomePage .container .body .categoriesList ul li a span {
+  font-size: 12px;
+}
+
+.userHomePage .overr {
+  height: calc(100% - 68%);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.userHomePage .overr::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.userHomePage .productsList {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.userHomePage .productsList li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.userHomePage .productsList li a img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.userHomePage .productsList li a .text p {
+  font-size: 12px;
+}
+.userHomePage .productsList li a .unitPrice {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.userHomePage .productsList li a button {
+  height: 30px;
+  width: 100px;
+}
+
+/* User Home Style End */
+.cartPage .container {
+  padding: 0 20px;
+}
+.cartPage .container .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #61b846;
+}
+.cartPage .container .head h4 {
+  color: #61b846;
+  /* font-size: 15px; */
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.cartPage .container .head h6 {
+  color: #024f9d;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.cartPage .over  {
+  height: calc(100% - 25px);
+}
+.cartPage .body  {
+  margin-top: 10px;
+}
+.cartPage .body ul  {
+  height: 200px;
+  width: 100%;
+  overflow: auto;
+}
+.cartPage .body ul::-webkit-scrollbar  {
+  display: none;
+}
+.cartPage .body ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.cartPage .body ul li div.text {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartPage .body ul li .text_ {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.cartPage .body ul li img {
+  width: 100px;
+}
+.cartPage .body ul li div.text input {
+  width: 30%;
+  outline: none;
+  text-align: center;
+}
+.cartPage .body ul li div.text span {
+  font-size: 25px;
+}
+.cartPage .body ul li div.price {
+  width: 15%;
+}
+.cartPage .totalPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+.cartPage .totalPrice p {
+  color: #61b846;
+  font-size: 14px;
+  font-weight: bold;
+}
+.cartPage .formm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+  
+}
+.cartPage .formm input,.cartPage .formm textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #61b846;
+  resize: none;
+  padding: 10px ;
+}
+.cartPage .formm form button {
+  width: 100%;
+}
+
+/* Cart Style End */
+
+.userAccountPage .head {
+  text-align: center;
+}
+.userAccountPage .head h1 {
+  color: #024f9d;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.userAccountPage .head img {
+  width: 90px;
+}
+
+.userAccountPage .body {
+  text-align: center;
+  margin: 5px 0;
+}
+.userAccountPage .body .updateText {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: baseline;
+}
+
+.userAccountPage .body .updateText input {
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 10px;
+  color: gray;
+  font-weight: bold;
+  outline: none;
+}
+.userAccountPage .body .updateText i {
+  color: #61b846;
+  margin-left: -10px;
+}
+
+.userAccountPage .container_ {
+  width: 70%;
+  margin: 10px auto 0 auto;
+}
+.userAccountPage .container_ h3 {
+  color: #024f9d;
+}
+
+.userAccountPage .container_ .overr {
+  height: 200px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.userAccountPage .container_ .overr::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.userAccountPage .container_ ul.productsList {
+  width: 90%;
+  margin: auto;
+}
+
+.userAccountPage .container_ ul.productsList li {
+  margin: 20px 0;
+}
+.userAccountPage .container_ ul.productsList li a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #61b846;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 40px;
+}
+.userAccountPage .container_ ul.productsList li a img {
+  width: 50px;
+  height: 30px;
+}
+.userAccountPage .container_ button {
+  width: 100%;
+}
+
+.userAccountPage .over {
+  height: calc(100% - 5%);
+}
+
+/* User Account Style End */
+
+.adminHomePage .body h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #024f9d;
+}
+
+.adminHomePage ul.productsList {
+  width: 85%;
+  margin: auto;
+}
+.adminHomePage ul.productsList li {
+  margin: 20px 0;
+}
+.adminHomePage ul.productsList li a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #61b846;
+  border-radius: 10px;
+  padding: 30px 5px;
+}
+.adminHomePage ul.productsList li a img {
+  width: 100px;
+}
+
+/* Admin Home Style End */
+
+.adminProductPage .body h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #024f9d;
+}
+
+.adminProductPage form {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+.adminProductPage form .imagee {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 10px 10px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.adminProductPage form .imagee img {
+  object-fit: contain;
+  width: 100px;
+}
+.adminProductPage form .group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adminProductPage form .group input,
+.adminProductPage form .group select {
+  width: 100%;
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 10px 10px;
+  color: gray;
+  outline: none;
+}
+.adminProductPage form .group.group_ input {
+  width: 50%;
+}
+.adminProductPage form .group .group_ label {
+  font-size: 12px;
+}
+
+.adminProductPage form button {
+  width: 100%;
+  height: 50px;
+}
+/* Admin Product Style End */
+.adminAccountPage .head {
+  text-align: center;
+}
+.adminAccountPage .head h1 {
+  color: #024f9d;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.adminAccountPage .head img {
+  width: 90px;
+}
+
+.adminAccountPage .body {
+  text-align: center;
+  margin: 5px 0;
+}
+.adminAccountPage .body .updateText {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: baseline;
+}
+.adminAccountPage .body .updateImage {
+  width: 70%;
+  margin: 10px auto 0 auto;
+}
+.adminAccountPage .body .addCat {
+  width: 70%;
+  margin: 10px auto 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+}
+.adminAccountPage .body .updateText input {
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 10px;
+  color: gray;
+  font-weight: bold;
+  outline: none;
+}
+.adminAccountPage .body .updateText i {
+  color: #61b846;
+  margin-left: -10px;
+}
+
+.adminAccountPage .body .updateImage .imagee {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 10px 10px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.adminAccountPage .body .updateImage .imagee i {
+  font-size: 40px;
+}
+
+.adminAccountPage .addCat input {
+  width: 60%;
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 10px 10px;
+  color: gray;
+  outline: none;
+}
+.adminAccountPage .addCat .btnn {
+  width: 40%;
+  height: 35px;
+  border-radius: 15px;
+  background: #61b846;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 83.333% */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.adminAccountPage .container_ {
+  width: 70%;
+  margin: 10px auto 0 auto;
+}
+.adminAccountPage .container_ h3 {
+  color: #024f9d;
+}
+
+.adminAccountPage .container_ .overr {
+  height: 100px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.adminAccountPage .container_ .overr::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.adminAccountPage .container_ ul.productsList {
+  width: 90%;
+  margin: auto;
+}
+
+.adminAccountPage .container_ ul.productsList li {
+  margin: 20px 0;
+}
+.adminAccountPage .container_ ul.productsList li a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #61b846;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 40px;
+}
+.adminAccountPage .container_ ul.productsList li a img {
+  width: 50px;
+  height: 30px;
+}
+.adminAccountPage .container_ button {
+  width: 100%;
+}
+
+.adminAccountPage .over {
+  height: calc(100% - 5%);
+}
+
+/* Admin Acount Style End */
+
+/* Custom */
+.first {
+  color: #61b846;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 50px;
+}
+.second {
+  color: #024f9d;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  /* margin-top: 15px; */
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  background: #61b846;
+  box-shadow: 0px 4px 4px 5px #d4d3d3;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 83.333% */
+  font-family: Arial, Helvetica, sans-serif;
+}
